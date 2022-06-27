@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="ContainerStyle.css" />
   </head>
   <body>
+  <div id='header'>
+  <p>RadWagon 4 Electric Cargo Bike - the trusted cargo carrier</p>
+  </div>
     <model-viewer id="modelView" src="./EBike.glb" ios-src="./EBike.usdz" environment-image="neutral" shadow-intensity="0.3" ar camera-controls alt="A 3D model carousel">
 	
 </model-viewer>
@@ -34,6 +37,13 @@
     display: none;
   }
 
+  #header
+  {
+	position:absolute;
+	text-align:center;
+	top:30px;
+	left:50%; 
+  }
   model-viewer {
     background-color: #eee;
     --poster-color: #eee;
